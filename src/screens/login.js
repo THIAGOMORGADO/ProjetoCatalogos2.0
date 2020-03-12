@@ -10,8 +10,8 @@ export default class login extends Component {
     constructor(props){
 		super(props);
 		this.state = {
-			email:'',
-			senha:''
+			Email:'',
+			Senha:''
 		}
 
         this.Logar = this.Logar.bind(this);
@@ -24,16 +24,14 @@ export default class login extends Component {
 
     Logar() {
         firebase.auth().onAuthStateChanged((user) => {
-            if(user){
-                this.props.navigation.navigate('TelaMenu')
+			if(user){
+				this.props.navigation.navigate('home');
             }
-            else {
-                this.props.navigation.navigate('login')
-            }
-         });
-         firebase.auth().signInWithEmailAndPassword(
-			this.state.email, 
-			this.state.senha
+		});	
+
+		firebase.auth().signInWithEmailAndPassword(
+			this.state.Email, 
+			this.state.Senha
 			).catch((error) => {
 				if(error.code == 'auth/wrong-password'){
 					alert("Senha Incorreta");
@@ -41,7 +39,7 @@ export default class login extends Component {
 					alert("Tente Novamente !!");
 				}
 			});
-    }
+	}
     contato(){
         this.props.navigation.navigate('contato');
     }  
@@ -56,12 +54,14 @@ export default class login extends Component {
                     <View style={styles.inputArea}>
                         <TextInput 
                             style={styles.input}
-                            placeholder="E-mail"  
-                            onChangeText={(email) => {this.setState({email})}}
+                            placeholder="E-mail"
+                            placeholderTextColor = "#000"  
+                            onChangeText={(Email) => {this.setState({Email})}}
                         />
                         <TextInput 
                             secureTextEntry={true}
                             placeholder="Semha"
+                            placeholderTextColor = "#000"
                             onChangeText={(Senha) => this.setState({Senha})} 
                             style={styles.input}
                         />
@@ -94,7 +94,8 @@ const styles = StyleSheet.create({
         alignItems:"center",
     },
     input:{
-        
+        borderWidth:1,
+        borderColor:'#000',
         height:40,
         width:300,
         backgroundColor:'#ccc',
@@ -112,6 +113,8 @@ const styles = StyleSheet.create({
 		margin:10
     },
     btnCadas:{
+        borderWidth:1,
+        borderColor:'#000',
         backgroundColor:"#ccc",
         margin:10,
         height:40,

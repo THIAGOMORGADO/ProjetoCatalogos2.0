@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, StyleSheet, Button } from 'react-native'
+import { Text, View, StyleSheet, Button, ImageBackground } from 'react-native'
 
 export default class CalculoBaguete extends Component {
     constructor(props){
@@ -11,16 +11,25 @@ export default class CalculoBaguete extends Component {
     }
     render() {
         return (
-            <View style={styles.container}>
-                <Text>Calculo baguete </Text>
-                <Button title="ingrediente" onPress={this.Ing}/>
-            </View>
+            <ImageBackground style={styles.bg} source={require('../fundo/fundo.jpg')}>
+                    <Text style={styles.titulo}>Calculo baguete </Text>
+                        <View style={styles.input}>
+
+                        </View>
+                    <Button title="ingrediente" onPress={this.Ing}/>
+            </ImageBackground>
         )
     }
 }
 const styles = StyleSheet.create({
-    container:{
+    bg:{
         flex:1,
-        backgroundColor:'#ff0000'
+    },
+    titulo:{
+        flexDirection:'row',
+        alignSelf:'center',
+        justifyContent:'center',
+        fontSize:26,
+        fontWeight:'bold'
     }
 })
