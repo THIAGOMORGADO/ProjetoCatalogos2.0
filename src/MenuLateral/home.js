@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, View, Button } from 'react-native'
+import { Text, View, Button,StyleSheet } from 'react-native'
 
 export default class home extends Component {
     constructor(props){
@@ -14,7 +14,7 @@ export default class home extends Component {
    
     render() {
         return (
-            <View>
+            <View style={styles.container}>
                 <Button title="acessar receitas" onPress={this.Receitas}/>
                
                 <Text>Foto</Text>
@@ -22,4 +22,8 @@ export default class home extends Component {
         )
     }
 }
- 
+const styles = StyleSheet.create({
+    container:{
+        paddingTop:100
+    }
+}) 

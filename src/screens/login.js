@@ -47,7 +47,8 @@ export default class login extends Component {
         return (
             <ImageBackground style={styles.bg} source={require('../fundo/fundo.jpg')}>
                 <StatusBar 
-                    backgroundColor='#fff'
+                    backgroundColor='#f3eadb'
+                    
                     barStyle="dark-content"
                 />
                 <View style={styles.container}>
