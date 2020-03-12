@@ -30,6 +30,12 @@ const StackNavigator = createStackNavigator({
   }
 
   
+},
+{
+		title:null,
+		defaultNavigationOptions:{
+		headerShown:false,	
+	}
 })
 export default createAppContainer(StackNavigator);
 
