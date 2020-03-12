@@ -1,5 +1,5 @@
 {
-  "name": "PorjetoReceitas",
+  "name": "porjetoreceitas",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -35,5 +35,9 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "description": "Versao do projeto 1.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }
