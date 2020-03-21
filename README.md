@@ -1,6 +1,8 @@
 <<<<<<< HEAD
 subindo para git
 subindo arquivos
+GITIGNORE <- E UM ARQUIVO NO PROJETO QUE VC VAI DIZER QUE NAO E PARA SUBIR PARA REPPOSITORIO 'API.JS 
+    SE ELA TIVE MARCADO NO ARQUIVO DO GITIGNORE ELE NAO VAI SUBIR PARA O REPOSITORIO'
 =======
 >>>>>>> cf18eaf63830963355e70854fbd5649961d13944
 
@@ -37,5 +39,6 @@ git add -A <- adicionando todos os arquivos do Projetos
 git status <- ele mostra todos os arquivo trucando em verde 
 
 git commit -am 'inserir commit' <- comando para inserir no git Local maquina
+
 
 
