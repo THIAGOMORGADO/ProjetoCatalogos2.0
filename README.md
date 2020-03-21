@@ -16,9 +16,6 @@ git push -u origin master
 …or import code from another repository
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
-
-
-
 "# ProjetoCatalogos2.0" 
 
 git remote add origin git@github.com:THIAGOMORGADO/ProjetoCatalogos2.0.git <- Clonar Repositorio Remoto
