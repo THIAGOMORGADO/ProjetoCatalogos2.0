@@ -12,8 +12,8 @@ export default class CalculoBaguete extends Component {
     }
 
     IngredientesBaguete() {
-       //  this.props.navigation.navigate('IngredientesBaguete');
-       
+        //  this.props.navigation.navigate('IngredientesBaguete');
+       // to aqui trabalhando na linha 16
     }
 
     // FUNÇÃO CALCULAR
