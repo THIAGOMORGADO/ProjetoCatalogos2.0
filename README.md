@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 subindo para git
+subindo arquivos
+=======
+>>>>>>> cf18eaf63830963355e70854fbd5649961d13944
 
 // Introdução para subir no git
 
@@ -16,6 +20,10 @@ git push -u origin master
 …or import code from another repository
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> cf18eaf63830963355e70854fbd5649961d13944
 "# ProjetoCatalogos2.0" 
 
 git remote add origin git@github.com:THIAGOMORGADO/ProjetoCatalogos2.0.git <- Clonar Repositorio Remoto
