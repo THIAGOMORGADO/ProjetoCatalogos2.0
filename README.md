@@ -57,3 +57,8 @@ alguma coisasalguma coisasalguma coisas
 
 
 "# ProjetoCatalogos2.0" 
+git remote add origin git@github.com:THIAGOMORGADO/ProjetoCatalogos2.0.git <- Clonar Repositorio Remoto
+
+git push -u origin master <- Da o primeiro Push no repositorio Remoto 
+
+git push origin master <- // Comando Para subir Arquivo no repositorio Remoto 
