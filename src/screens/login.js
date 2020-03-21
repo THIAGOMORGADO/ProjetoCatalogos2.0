@@ -41,7 +41,7 @@ export default class login extends Component {
 			});
 	}
     contato(){
-        this.props.navigation.navigate('contato');
+        this.props.navigation.navigate('home');
     }  
     render() {
         return (
